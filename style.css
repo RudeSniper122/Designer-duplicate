@@ -1,0 +1,328 @@
+:root{
+  --test: green;
+  --b-color: #ebe4e1;
+  --b-temp-color: #eaeaea;
+  --light-nav: #ead8d6;
+  --nav: #df4b4b;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--b-temp-color);
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+
+/* dashboard section */
+.dashboard{
+  padding: 25px 30px 25px 30px;
+  background-color: var(--nav);
+  color: #fff;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  justify-content: space-between;
+}
+.dashboardText h2{
+  margin-bottom: 10px;
+}
+.dashboardImg{
+  /* border: 5px solid white; */
+  color: #fff;
+  margin: 20px 20px 0 0;
+  height: 100px;
+  border-radius: 50px;
+}
+
+/* banner section */
+.xyz{
+  margin: 20px 20px 0;
+  height: 300px;
+  background-color: #d3c3dc;
+  border-radius: 30px;
+}
+.xyz img{
+  height: 300px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+
+/* donation section */
+.donationType{
+  margin: 30px 25px 10px;
+}
+
+/* short donation section */
+.shortDetailsContainer{
+  padding: 70px 40px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+.donationIcon{
+  color: var(--nav);
+}
+.donationTypeText{
+  margin-left: 50px;
+}
+.donationTypeText h3{
+  margin-bottom: 20px;
+}
+.downArrow{
+  margin-left: 165px;
+}
+.downArrow i{
+  color: var(--nav);
+}
+
+/* more donation details and animation */
+.moreDetailsContainer{
+  height: 768px;
+  overflow: scroll;
+  background-color: white;
+  border-radius: 0 0 30px 30px;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+.show{
+  display: block !important;
+  animation: mymove 0.5s 1;
+}
+@keyframes mymove {
+  0% {
+    position: relative; !important;
+    z-index: -1 !important;
+    opacity: 0;
+  transform: translateY(-300px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0;);
+  }
+}
+.allSideCurveBorder{
+  border-radius: 30px 30px 0 0 !important;
+}
+
+
+
+
+/* Latest Statements */
+.statementBtn{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  border-radius: 50px;
+}
+.statementHeading{
+  background-color: white;
+  padding: 40px 0 40px 0;
+  border-radius: 30px;
+  position: relative;
+}
+.statementHeading h3{
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+.latestStatements{
+  background-color: white;
+  padding: 30px 20px 30px 25px;
+  display: flex;
+  align-items: center;
+}
+.fa, .fas {
+    font-weight: normal !important;
+}
+.payMode{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 70px;
+}
+.payMode .rating{
+  color: grey;
+  margin: 10px 0 15px;
+}
+.payMode .rating span{
+  margin-left: 10px;
+}
+.statementDate{
+  margin-left: 200px;
+}
+.payModeText{
+  color: #003366;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.viewMoreForStatement{
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f2e4fd;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.viewMoreForStatement i{
+  margin-left: 20px;
+}
+.justBtn{
+  margin-top: 20px;
+  display: flex;
+  background-color: var(--nav);
+  color: #ffffff;
+  font-size: 2.2rem;
+  padding: 20px 20px 20px 20px;
+  border-radius: 50px;
+}
+.hire{
+  background-color: var(--test) !important;
+}
+
+hr{
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+/* chat box section */
+.chatBox{
+  margin: 20px 25px;
+  padding: 50px 0 50px 40px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.chatBox h3{
+  margin-left: 50px;
+}
+.chatBox i{
+  color: var(--nav);
+}
+
+
+/* call request section */
+.callRequestContainer{
+  background-color: white;
+  margin: 30px 25px 0;
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+.requestHeading{
+  padding: 30px 0 20px 40px;
+}
+.query{
+  margin: 0 0 0 40px;
+  position: relative;
+  z-index: 1;
+}
+.query textarea{
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.query input{
+  margin: 20px 0 20px 0;
+  font-size: 2.8rem;
+  padding: 20px 0 20px 30px;
+  border: 2px solid black;
+  border-right: 0 !important;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+/* placeholder color */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: lightgrey;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: lightgrey;
+}
+
+
+.query button{
+  background-color: var(--nav);
+  color: white;
+  margin-left: -10px;
+  font-size: 2.8rem;
+  padding: 20px 25px;
+  border-radius: 0 20px 20px 0;
+  border: 2px solid black;
+  border-left: 0 !important;
+}
+
+.dropDownMsg{
+  margin: 0 25px;
+  border-radius: 25px;
+  background-color: white;
+  padding: 30px 0 30px 40px;
+  display: none;
+}
+.flexDropDown{
+  display: flex;
+}
+.flexDropDown .dropDownMsgIcon i{
+  margin-right: 15px;
+  color: var(--test)
+}
+.callRequestAnimationShow{
+  display: block !important;
+  animation: callRequest 0.5s 1;
+}
+@keyframes callRequest {
+  0% {
+    opacity: 0;
+  transform: translateY(-150px);
+}
+  100%{
+    opacity: 1;
+    transform: translateY(0;);
+  }
+}
+
+
+
+
+/* menu bar section */
+.menuBar{
+  background-color: #ffffff;
+  padding: 35px 0;
+  color: #a9adb1;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 10px 0 grey;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3
+}
+.menuBar i:hover{
+  color: #505fb1;
+}
+
+.test{
+  height: 10rem;
+}
