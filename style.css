@@ -86,7 +86,7 @@ body{
 
 /* more donation details and animation */
 .moreDetailsContainer{
-  height: 768px;
+  height: 780px;
   overflow: scroll;
   background-color: white;
   border-radius: 0 0 30px 30px;
@@ -156,7 +156,7 @@ body{
   margin-left: 10px;
 }
 .statementDate{
-  margin-left: 200px;
+  margin-left: 100px;
 }
 .payModeText{
   color: #003366;
